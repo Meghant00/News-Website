@@ -5,6 +5,7 @@ const SearchBar = ({ searchClicked }) => {
     from: { y: -100 },
     enter: { y: 0 },
     leave: { y: -100 },
+    config: { duration: 1000 },
   });
   return (
     <div className="w-full">
