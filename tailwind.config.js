@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         body: ["IBM Plex Serif", "serif"],
       },
+      transitionProperty: {
+        width: "width",
+      },
+      width: {
+        60: "60%",
+      },
     },
   },
   variants: {
