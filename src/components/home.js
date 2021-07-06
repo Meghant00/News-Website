@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./header";
 import Sidebar from "./sidebar";
 import { useState, useRef } from "react";
+import Title from "./title";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -33,6 +34,9 @@ const Home = () => {
         )}
 
         <Header sidebarClickHandler={sidebarClickHandler} />
+        <div className="w-4/5 mx-auto">
+          <Title name="Hello World" />
+        </div>
       </div>
     </>
   );
