@@ -10,7 +10,10 @@ module.exports = {
         width: "width",
       },
       width: {
-        60: "60%",
+        60: "55%",
+      },
+      zIndex: {
+        "-10": "-10",
       },
     },
   },

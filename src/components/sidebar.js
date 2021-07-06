@@ -1,7 +1,8 @@
 import React from "react";
-
 import { useTransition, animated } from "react-spring";
-const Sidebar = ({ closeClickHandler, sidebarClicked }) => {
+import { FaTimes } from "react-icons/fa";
+import SubHeading from "./subheading";
+const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
   //Sidebar Animation
   const sidebarAnimation = useTransition(sidebarClicked, {
     from: { x: -500 },
@@ -9,8 +10,9 @@ const Sidebar = ({ closeClickHandler, sidebarClicked }) => {
     leave: { x: -500 },
     config: { duration: 1000 },
   });
+
   return (
-    <div className="">
+    <div className="z-10">
       {sidebarAnimation((style, item) =>
         item ? (
           <animated.div
@@ -18,12 +20,14 @@ const Sidebar = ({ closeClickHandler, sidebarClicked }) => {
             className="px-2 w-full md:w-1/2 lg:w-1/4 absolute top-0 left-0 h-full border-r border-black py-4 bg-white z-10"
           >
             <div className="flex flex-row items-center justify-end">
-              <button onClick={closeClickHandler}>CLose</button>
+              <button
+                onClick={() => setSidebarClicked(false)}
+                className="outline-none focus:outline-none"
+              >
+                <FaTimes className="text-2xl" />
+              </button>
             </div>
-            <ul className="list-disc relative">
-              <li className="text-2xl uppercase tracking-wider">Trending</li>
-              <div className="absolute right-0 top-1/2 w-60 h-0.5 bg-black px-2"></div>
-            </ul>
+            <SubHeading name="Trending" />
           </animated.div>
         ) : (
           ""
