@@ -24,6 +24,9 @@ module.exports = {
     extend: {
       width: ["responsive", "hover", "group-hover", "focus"],
       scale: ["responsive", "hover", "group-hover", "focus"],
+      borderWidth: ["last"],
+
+      display: ["group-hover"],
     },
   },
   plugins: [],

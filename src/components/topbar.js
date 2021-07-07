@@ -33,7 +33,7 @@ const Topbar = ({ onSearchClick, onSidebarClick }) => {
           ))}
         </div>
       </div>
-      <div className="border-l border-b border-black px-2 py-2 hidden md:flex">
+      <div className="border-l border-b border-black px-2 py-2 hidden md:block">
         <button
           onClick={onSearchClick}
           className="cursor-pointer focus:outline-none"

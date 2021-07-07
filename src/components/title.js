@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = ({ name }) => {
   return (
-    <h1 className="text-7xl uppercase text-center py-4 tracking-wide">
+    <h1 className="text-4xl md:text-6xl lg:text-7xl uppercase text-center py-4 tracking-wide">
       <a
         href="/home"
         className="hover:text-title transition duration-100 ease-linear "
