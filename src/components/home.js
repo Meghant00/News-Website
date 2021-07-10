@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import Title from "./title";
 import Tagline from "./tagline";
 import NavMenu from "./nav-menu";
+import TopSlider from "./top-slider";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -40,6 +41,7 @@ const Home = () => {
           <Title name="Hello World" />
           <Tagline />
           <NavMenu />
+          <TopSlider />
         </div>
       </div>
     </>
