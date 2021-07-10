@@ -6,12 +6,23 @@ import SwiperCore, { Autoplay } from "swiper/core";
 import TopSliderItem from "./top-slider-item";
 import "swiper/swiper.min.css";
 import topSliderData from "../data/top-slider-data";
+import { useState, useEffect } from "react";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
 const TopSlider = () => {
+  const [slidePerView, setslidePerView] = useState(3);
+
+  useEffect((windowWidth) => {
+    windowWidth = window.screen.width;
+    if (windowWidth < 600) {
+      setslidePerView(1);
+    } else if (windowWidth > 600 && windowWidth < 800) {
+      setslidePerView(2);
+    }
+  }, []);
   return (
     <Swiper
-      slidesPerView={3}
+      slidesPerView={slidePerView}
       spaceBetween={10}
       loop={true}
       loopFillGroupWithBlank={true}

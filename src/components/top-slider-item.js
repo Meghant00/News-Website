@@ -9,7 +9,7 @@ const TopSliderItem = ({ heading, link, image, date }) => {
   return (
     <div className="flex flex-row items-center justify-between py-2">
       <div className="group relative">
-        <a href="home">
+        <a href={link}>
           <img src={image} alt={heading} className="bg-black" />
 
           <div className="w-full  h-full absolute group  group-hover:bg-white group-hover:bg-opacity-20 transition duration-300 ease-linear top-0"></div>

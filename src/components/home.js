@@ -6,6 +6,7 @@ import Title from "./title";
 import Tagline from "./tagline";
 import NavMenu from "./nav-menu";
 import TopSlider from "./top-slider";
+import MainSliderItem from "./main-slider-item";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -42,6 +43,11 @@ const Home = () => {
           <Tagline />
           <NavMenu />
           <TopSlider />
+          <div className="grid grid-cols-3 gap-4 py-4">
+            <div className="col-span-2">
+              <MainSliderItem />
+            </div>
+          </div>
         </div>
       </div>
     </>
