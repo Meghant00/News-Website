@@ -1,72 +1,65 @@
 import React from "react";
 import { FaRegClock, FaRegFolder } from "react-icons/fa";
+import Tags from "./tags";
 
-const MainSliderItem = () => {
+const MainSliderItem = ({
+  heading,
+  link,
+  image,
+  date,
+  author,
+  description,
+  tags,
+  authorImage,
+}) => {
+  const displayDate = new Date(date.split("-"));
+  const day = displayDate.getDay();
+  const month = displayDate.toLocaleString("default", { month: "short" });
+  const year = displayDate.getFullYear();
   return (
-    <div className="flex flex-col items-start  text-gray-500 justify-start w-full">
+    <div className="flex flex-col items-start  text-gray-500 justify-start w-full px-4">
       <div className="group relative">
-        <a href="home">
-          <img
-            src="/images/mainSlider1.jpg"
-            alt="heading"
-            className="bg-black"
-          />
+        <a href={link}>
+          <img src={image} alt={heading} className="bg-black" />
 
           <div className="w-full  h-full absolute group  group-hover:bg-white group-hover:bg-opacity-20 transition duration-300 ease-linear top-0"></div>
         </a>
       </div>
-      <h3 className="text-4xl py-2 font-semibold text-black">
+      <h3 className="text-2xl md:text-4xl py-2 font-semibold text-black">
         <a
-          href="home"
+          href={link}
           className="hover:text-title transition duration-200 ease-linear"
         >
-          By that characteristically dolphin cat before examined bee
+          {heading}
         </a>
       </h3>
-      <div className="flex flex-row items-center gap-4 justify-between text-sm font-semibold py-4">
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between text-sm font-semibold py-4">
         <a
-          href="author"
+          href={author}
           className="hover:text-blue-700 transition duration-100 ease-linear 
         "
         >
           <div className="flex flex-row items-center justify-between">
             <img
-              src="images/author1.jpg"
-              alt="author"
+              src={authorImage}
+              alt={author}
               className="rounded-full w-8 h-8"
             />
-            <span className="px-4">spadmin</span>
+            <span className="px-4">{author}</span>
           </div>
         </a>
         <div className="flex flex-row items-center justify-start">
           <FaRegFolder className="font-semibold" />
-          <span className="px-2">
-            <a
-              href="tag"
-              className="hover:text-blue-700 transition duration-100 ease-linear 
-        "
-            >
-              Tags
-            </a>
-            ,
-            <a
-              href="tag"
-              className="hover:text-blue-700 transition duration-100 ease-linear 
-        "
-            >
-              Tags
-            </a>
-          </span>
+          <Tags tags={tags} />
         </div>
         <div className="flex flex-row items-center justify-start">
           <FaRegClock className="font-semibold" />
-          <span className="px-2">Date</span>
+          <span className="px-2">
+            {month} {day}, {year}
+          </span>
         </div>
       </div>
-      <p>
-        After reverently despite goldfish up unobtrusive camel went one this
-        unicorn snuffed crud complete goodness out much orca
-      </p>
+      <p className="text-justify pb-8">{description}</p>
     </div>
   );
 };

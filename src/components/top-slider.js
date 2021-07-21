@@ -5,7 +5,7 @@ import SwiperCore, { Autoplay } from "swiper/core";
 
 import TopSliderItem from "./top-slider-item";
 import "swiper/swiper.min.css";
-import topSliderData from "../data/top-slider-data";
+import topSliderData from "../data/slider-data";
 import { useState, useEffect } from "react";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
