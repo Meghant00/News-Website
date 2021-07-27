@@ -15,7 +15,7 @@ const RecentPostItem = ({
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();
   return (
-    <div className="grid grid-cols-3 gap-4 items-center  px-2 py-2 text-gray-500">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center  px-2 py-2 text-gray-500">
       <div className="group relative">
         <a href={title}>
           <img src={image} alt={title} className="w-full" />
