@@ -28,7 +28,7 @@ const RecentPost = () => {
 
   return (
     <div>
-      <div className="py-4 border-b border-gray-500 px-4">
+      <div className="py-4 border-b border-gray-500 lg:px-4">
         {currentPosts.map((items) => (
           <RecentPostItem
             key={items.title}
