@@ -10,8 +10,7 @@ const RecentPostItem = ({
   description,
   date,
 }) => {
-  const a = "07-21-2021";
-  const displayDate = new Date(a.split("-"));
+  const displayDate = new Date(date.split("-"));
   const day = displayDate.getDay();
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();

@@ -7,6 +7,7 @@ import Tagline from "./tagline";
 import NavMenu from "./nav-menu";
 import TopSlider from "./top-slider";
 import MainSlider from "./main-slider";
+import RecentPosts from "./recent-posts";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -46,6 +47,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-4 ">
             <div className="col-span-0 lg:col-span-2  lg:border-double lg:border-r-4 lg:border-gray-300">
               <MainSlider />
+              <RecentPosts />
             </div>
           </div>
         </div>
