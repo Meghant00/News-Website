@@ -49,6 +49,7 @@ const Home = () => {
               <MainSlider />
               <RecentPosts />
             </div>
+            <div className=""></div>
           </div>
         </div>
       </div>
