@@ -1,14 +1,14 @@
 import React from "react";
 import { FaRegClock } from "react-icons/fa";
 
-const PopularArticlesItem = ({ heading, image, date }) => {
+const PopularArticlesItem = ({ heading, image, date, numbering }) => {
   const displayDate = new Date(date.split("-"));
   const day = displayDate.getDay();
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();
   return (
     <div className="flex flex-row items-center justify-between px-2 py-2">
-      <span className="font-semibold text-2xl px-2">1.</span>
+      <span className="font-semibold text-2xl px-2">{numbering}.</span>
       <div className="flex flex-col items-start justify-between w-1/2 px-2">
         <h3 className="font-semibold">
           <a
@@ -27,7 +27,7 @@ const PopularArticlesItem = ({ heading, image, date }) => {
       </div>
 
       <div className="group relative w-2/5">
-        <a href="home">
+        <a href={heading}>
           <img src={image} alt="news" className="" />
 
           <div className="w-full  h-full absolute group  group-hover:bg-white group-hover:bg-opacity-20 transition duration-300 ease-linear top-0"></div>

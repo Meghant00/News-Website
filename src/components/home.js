@@ -8,6 +8,7 @@ import NavMenu from "./nav-menu";
 import TopSlider from "./top-slider";
 import MainSlider from "./main-slider";
 import RecentPosts from "./recent-posts";
+import PopularArticles from "./popular-articles";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -49,7 +50,9 @@ const Home = () => {
               <MainSlider />
               <RecentPosts />
             </div>
-            <div className=""></div>
+            <div className="">
+              <PopularArticles />
+            </div>
           </div>
         </div>
       </div>

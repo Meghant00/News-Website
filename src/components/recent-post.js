@@ -3,7 +3,7 @@ import news from "../data/news";
 import RecentPostItem from "./recent-post-item";
 import { useState, useEffect } from "react";
 import Paginate from "./paginate";
-import postsPerPage from "../utilis/global-variables";
+import { postsPerPage } from "../utilis/global-variables";
 const RecentPost = () => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
