@@ -11,7 +11,7 @@ import RecentPosts from "./recent-posts";
 import PopularArticles from "./popular-articles";
 import Search from "./search";
 import Trending from "./trending";
-import TagItems from "./tag-items";
+import HotTags from "./hot-tags";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -57,7 +57,7 @@ const Home = () => {
               <PopularArticles />
               <Search />
               <Trending />
-              <TagItems />
+              <HotTags />
             </div>
           </div>
         </div>
