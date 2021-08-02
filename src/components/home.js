@@ -10,6 +10,7 @@ import MainSlider from "./main-slider";
 import RecentPosts from "./recent-posts";
 import PopularArticles from "./popular-articles";
 import Search from "./search";
+import TrendingItem from "./trending-item";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
