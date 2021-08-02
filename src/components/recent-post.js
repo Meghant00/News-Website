@@ -24,8 +24,6 @@ const RecentPost = () => {
     }
   };
 
-  console.log(news.sort((a, b) => b.date - a.date));
-
   return (
     <div>
       <div className="py-4 border-b border-gray-500 lg:px-4">
