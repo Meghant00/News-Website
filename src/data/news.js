@@ -63,7 +63,7 @@ const news = [
       "In but toucan komodo alas more up jeez dug loaded ravingly porcupine exuberant fortuitous unstinting lizard benignly sniffled behind hotly terrible lizard and close worm and gosh and below squirrel gurgled walked immaculately firefly the notably voluble less treacherously much next fortuitously hungry because alas far took simple while fantastically sat hello much.",
     image: "/images/news-6.jpg",
     tags: ["Politics", "Civil"],
-    likes: "80",
+    likes: "81",
   },
 ];
 
