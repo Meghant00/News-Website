@@ -12,7 +12,7 @@ const TrendingItem = ({ image, title, author, authorImage, date }) => {
         <a href={title}>
           <img src={image} alt={title} className="w-full" />
 
-          <div className="w-full  h-full absolute group  group-hover:bg-white group-hover:bg-opacity-20 transition duration-300 ease-linear top-0"></div>
+          <div className="w-full  h-full absolute group group-hover:bg-white group-hover:bg-opacity-20 transition duration-300 ease-linear top-0"></div>
         </a>
       </div>
       <div className="flex flex-col items-start justify-start px-4 col-span-2">
