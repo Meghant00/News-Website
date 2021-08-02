@@ -9,6 +9,7 @@ import TopSlider from "./top-slider";
 import MainSlider from "./main-slider";
 import RecentPosts from "./recent-posts";
 import PopularArticles from "./popular-articles";
+import Search from "./search";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -52,6 +53,7 @@ const Home = () => {
             </div>
             <div className="">
               <PopularArticles />
+              <Search />
             </div>
           </div>
         </div>

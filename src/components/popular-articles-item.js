@@ -9,7 +9,7 @@ const PopularArticlesItem = ({ heading, image, date, numbering }) => {
   return (
     <div className="flex flex-row items-center justify-between px-2 py-2">
       <span className="font-semibold text-2xl px-2">{numbering}.</span>
-      <div className="flex flex-col items-start justify-between w-1/2 px-2">
+      <div className="flex flex-col items-start justify-between lg:w-1/2 px-2">
         <h3 className="font-semibold">
           <a
             href={heading}
@@ -26,7 +26,7 @@ const PopularArticlesItem = ({ heading, image, date, numbering }) => {
         </div>
       </div>
 
-      <div className="group relative w-2/5">
+      <div className="group relative hidden lg:flex lg:w-2/5">
         <a href={heading}>
           <img src={image} alt="news" className="" />
 
