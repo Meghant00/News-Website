@@ -52,7 +52,7 @@ const news = [
       "Haltered pill the forceful the ouch compactly dear and hit unbound so ouch clumsily forbidding fish aboard returned scurrilously far and blithely intolerable more aside when wherever thoughtful hardy unimaginatively across amidst but reindeer a hey cow more undid therefore anteater ouch and.",
     image: "/images/news-5.jpg",
     tags: ["Travel", "Civil"],
-    likes: "10",
+    likes: "11",
   },
   {
     title: "Like meadowlark while onto this this that dully some far wound",

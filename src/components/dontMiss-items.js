@@ -8,7 +8,7 @@ const DontMissItems = () => {
   const [popularArticles, setPopularArticles] = useState([]);
 
   useEffect(() => {
-    setPopularArticles(news.filter((news) => news.likes > 50).slice(0, 3));
+    setPopularArticles(news.filter((news) => news.likes > 10).slice(0, 5));
   }, []);
 
   return (
