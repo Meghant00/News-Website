@@ -11,7 +11,7 @@ const LatestItem = ({ title, image }) => {
         </a>
       </div>
       <div className="flex flex-col items-start justify-between px-4 col-span-2">
-        <h3 className="text-xl py-2 font-semibold text-black">
+        <h3 className="text-base text-black">
           <a
             href={title}
             className="hover:text-title transition duration-200 ease-linear"
