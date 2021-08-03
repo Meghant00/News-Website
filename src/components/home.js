@@ -14,6 +14,7 @@ import Trending from "./trending";
 import HotTags from "./hot-tags";
 import DontMiss from "./dontMiss";
 import Latest from "./latest";
+import Categories from "./categories";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -67,6 +68,7 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-4/5 mx-auto py-4">
         <DontMiss />
         <Latest />
+        <Categories />
       </div>
     </>
   );
