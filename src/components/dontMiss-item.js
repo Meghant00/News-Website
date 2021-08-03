@@ -1,6 +1,6 @@
 import React from "react";
 
-const DontMiss = ({ numbering, heading }) => {
+const DontMissItem = ({ numbering, heading }) => {
   return (
     <div className="flex flex-row items-center justify-between px-2 py-2">
       <span className="font-semibold text-2xl px-2">{numbering}.</span>
@@ -18,4 +18,4 @@ const DontMiss = ({ numbering, heading }) => {
   );
 };
 
-export default DontMiss;
+export default DontMissItem;

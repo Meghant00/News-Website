@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import news from "../data/news";
-import DontMiss from "./dontMiss-item";
+import DontMissItem from "./dontMiss-item";
 
 const DontMissItems = () => {
   let number = 1;
@@ -14,7 +14,7 @@ const DontMissItems = () => {
   return (
     <div>
       {popularArticles.map((items) => (
-        <DontMiss
+        <DontMissItem
           key={items.title}
           heading={items.title}
           numbering={number++}
