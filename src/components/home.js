@@ -12,6 +12,7 @@ import PopularArticles from "./popular-articles";
 import Search from "./search";
 import Trending from "./trending";
 import HotTags from "./hot-tags";
+import DontMiss from "./dontMiss";
 const Home = () => {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -62,7 +63,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-4/5 mx-auto"></div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-4/5 mx-auto">
+        <DontMiss />
+      </div>
     </>
   );
 };

@@ -12,7 +12,7 @@ const DontMissItems = () => {
   }, []);
 
   return (
-    <div>
+    <div className="py-4">
       {popularArticles.map((items) => (
         <DontMissItem
           key={items.title}
