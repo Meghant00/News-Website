@@ -62,6 +62,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-4/5 mx-auto"></div>
     </>
   );
 };
