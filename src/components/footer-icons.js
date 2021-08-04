@@ -5,7 +5,7 @@ const FooterIcons = () => {
   return (
     <div className="py-4 flex flex-row items-start justify-start">
       {footerIcons.map((items) => (
-        <FooterIcon key={items.icon} icon={items.icon} link={items.link} />
+        <FooterIcon key={items.link} icon={items.icon} link={items.link} />
       ))}
     </div>
   );

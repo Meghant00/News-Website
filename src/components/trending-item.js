@@ -24,7 +24,7 @@ const TrendingItem = ({ image, title, author, authorImage, date }) => {
             {title}
           </a>
         </h3>
-        <div className="flex flex-col items-start md:flex-row  md:items-center gap-4 justify-between lg:text-xs font-semibold py-4">
+        <div className="flex flex-col items-start md:flex-row  md:items-center gap-2 justify-start lg:text-xs font-semibold py-4">
           <a
             href={author}
             className="hover:text-blue-700 transition duration-100 ease-linear 
@@ -41,7 +41,7 @@ const TrendingItem = ({ image, title, author, authorImage, date }) => {
           </a>
           <div className="flex flex-row items-center justify-start">
             <FaRegClock className="font-semibold" />
-            <span className="px-2">
+            <span className="pl-2">
               {month} {day}, {year}
             </span>
           </div>
