@@ -13,10 +13,10 @@ const Topbar = ({ onSearchClick, onSidebarClick }) => {
         className="flex flex-row items-center justify-start group border-r border-b border-black px-2 py-2 pb-3 cursor-pointer"
         onClick={onSidebarClick}
       >
-        <div className="flex flex-col justify-center items-start w-10">
-          <div className=" w-6  bg-black pt-1 group group-hover:w-8 transition-width transition-slowest ease"></div>
-          <div className=" w-7 my-1 bg-black pt-0.5 group"></div>
-          <div className=" w-8 bg-black pt-0.5 group transform group-hover:w-6 transition-width transition-slowest ease"></div>
+        <div className="flex flex-col gap-1 justify-center items-start w-16 h-4">
+          <div className=" w-6 h-1  bg-black group group-hover:w-8 transition-width transition-slowest ease"></div>
+          <div className=" w-7 h-1 bg-black group"></div>
+          <div className=" w-8 h-1 bg-black group transform group-hover:w-6 transition-width transition-slowest ease"></div>
         </div>
         <div className="uppercase group text-sm">More</div>
       </div>
