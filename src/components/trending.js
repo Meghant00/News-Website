@@ -6,7 +6,7 @@ import TrendingItems from "./trending-items";
 import MainTrendingComponent from "./main-trending-component";
 import news from "../data/news";
 
-const Trending = () => {
+const Trending = ({ isMainContent }) => {
   const [topNews, setTopNews] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Trending = () => {
   }, []);
   return (
     <div className={borderBottom}>
-      <SubHeading name="Trending" isMainContent={true} />
+      <SubHeading name="Trending" isMainContent={isMainContent} />
       {topNews.map((items) => (
         <MainTrendingComponent
           key={items.title}
