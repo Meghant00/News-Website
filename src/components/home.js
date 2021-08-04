@@ -30,7 +30,7 @@ const Home = () => {
 
   const sidebarRef = useRef();
   return (
-    <>
+    <div className="relative">
       <Sidebar
         sidebarClicked={sidebarClicked}
         setSidebarClicked={setSidebarClicked}
@@ -72,7 +72,7 @@ const Home = () => {
         <Categories />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

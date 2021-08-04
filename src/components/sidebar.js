@@ -1,7 +1,7 @@
 import React from "react";
 import { useTransition, animated } from "react-spring";
 import { FaTimes } from "react-icons/fa";
-import SubHeading from "./subheading";
+import Trending from "./trending";
 const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
   //Sidebar Animation
   const sidebarAnimation = useTransition(sidebarClicked, {
@@ -27,7 +27,7 @@ const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
                 <FaTimes className="text-2xl" />
               </button>
             </div>
-            <SubHeading name="Trending" />
+            <Trending isMainContent={false} />
           </animated.div>
         ) : (
           ""
