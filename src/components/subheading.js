@@ -8,7 +8,7 @@ const SubHeading = ({ name, isMainContent }) => {
     lineClassName = "w-1/2 h-0.5 bg-black";
   }
   return (
-    <ul className="list-disc list-inside flex flex-row items-center justify-start w-full ">
+    <ul className="list-disc list-inside flex flex-row items-center justify-start w-full py-2">
       <li className={textClassName}>{name}</li>
       <div className={lineClassName}></div>
     </ul>

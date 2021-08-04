@@ -2,6 +2,7 @@ import React from "react";
 import { useTransition, animated } from "react-spring";
 import { FaTimes } from "react-icons/fa";
 import Trending from "./trending";
+import Advertisement from "./advertisement";
 const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
   //Sidebar Animation
   const sidebarAnimation = useTransition(sidebarClicked, {
@@ -28,6 +29,7 @@ const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
               </button>
             </div>
             <Trending isMainContent={false} />
+            <Advertisement />
           </animated.div>
         ) : (
           ""
