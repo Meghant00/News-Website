@@ -7,7 +7,7 @@ const TopSliderItem = ({ heading, link, image, date }) => {
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();
   return (
-    <div className="flex flex-row items-center justify-between py-2">
+    <div className="flex flex-row items-center justify-between py-2 cursor-pointer">
       <div className="group relative">
         <a href={link}>
           <img src={image} alt={heading} className="bg-black w-20 h-16" />

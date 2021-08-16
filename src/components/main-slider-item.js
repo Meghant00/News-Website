@@ -17,7 +17,7 @@ const MainSliderItem = ({
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();
   return (
-    <div className="flex flex-col items-start  text-gray-500 justify-start w-full px-4">
+    <div className="flex flex-col items-start  text-gray-500 justify-start w-full px-4 cursor-pointer">
       <div className="group relative">
         <a href={link}>
           <img src={image} alt={heading} className="bg-black" />

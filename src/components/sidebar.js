@@ -13,12 +13,12 @@ const Sidebar = ({ sidebarClicked, setSidebarClicked }) => {
   });
 
   return (
-    <div className="z-10">
+    <div>
       {sidebarAnimation((style, item) =>
         item ? (
           <animated.div
             style={style}
-            className="px-2 w-full md:w-1/2 lg:w-1/4 absolute top-0 left-0 h-full border-r border-black py-4 bg-white z-10"
+            className="px-2 w-full md:w-1/2 lg:w-1/4 absolute top-0 left-0 h-full border-r border-black py-4 bg-white z-50"
           >
             <div className="flex flex-row items-center justify-end">
               <button

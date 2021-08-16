@@ -35,17 +35,17 @@ const Home = () => {
         sidebarClicked={sidebarClicked}
         setSidebarClicked={setSidebarClicked}
       />
-      <div>
         {sidebarClicked ? (
           <div
             ref={sidebarRef}
             onClick={close}
-            className="h-screen w-full bg-white bg-opacity-90 fixed top-0 z-8"
+            className="h-full w-full bg-white bg-opacity-70 absolute top-0 z-20"
           ></div>
         ) : (
           ""
         )}
 
+<div>
         <Header sidebarClickHandler={sidebarClickHandler} />
         <div className="w-4/5 mx-auto">
           <Title name="Hello World" />
