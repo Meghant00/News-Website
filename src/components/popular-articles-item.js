@@ -13,7 +13,7 @@ const PopularArticlesItem = ({ heading, image, date, numbering }) => {
         <h3 className="font-semibold">
           <a
             href={heading}
-            className="text-lg hover:text-title transition duration-100 ease-linear"
+            className="text-base hover:text-title transition duration-100 ease-linear"
           >
             {heading}
           </a>
