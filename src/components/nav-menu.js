@@ -44,7 +44,7 @@ const NavMenu = () => {
           ) : (
             <div
               style={style}
-              className="hidden lg:flex lg:flex-row items-start justify-between w-full"
+              className="hidden lg:flex lg:flex-row items-start justify-around w-full"
             >
               {navItems.map((items) => (
                 <NavItem

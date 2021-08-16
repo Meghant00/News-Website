@@ -6,75 +6,37 @@ const navItems = [
     dropdownItems: [],
   },
   {
-    name: "About",
-    link: "about",
+    name: "News",
+    link: "news",
     dropdown: false,
     dropdownItems: [],
   },
   {
-    name: "post & pages",
-    link: "",
-    dropdown: true,
-    dropdownItems: [
-      {
-        dropdownName: "Video Post",
-        link: "video-post",
-      },
-      {
-        dropdownName: "gallery Post",
-        link: "gallery-post",
-      },
-      {
-        dropdownName: "audio Post",
-        link: "audio-post",
-      },
-    ],
-  },
-  {
-    name: "thinking",
-    link: "",
-    dropdown: true,
-    dropdownItems: [
-      {
-        dropdownName: "home & living",
-        link: "home-living",
-      },
-      {
-        dropdownName: "lifestyle",
-        link: "lifestyle",
-      },
-    ],
-  },
-  {
-    name: "politics",
-    link: "",
-    dropdown: true,
-    dropdownItems: [
-      {
-        dropdownName: "house & living",
-        link: "house-living",
-      },
-      {
-        dropdownName: "travel",
-        link: "travel",
-      },
-    ],
-  },
-  {
-    name: "contact",
-    link: "contact",
+    name: "Economy",
+    link: "economy",
     dropdown: false,
-    dropdownItems: [],
+    dropdownItems: [
+      
+    ],
   },
   {
-    name: "buy now",
-    link: "buy-now",
-    dropdown: false,
-    dropdownItems: [],
+    name: "Entertainment",
+    link: "",
+    dropdown: true,
+    dropdownItems: [
+      {
+        dropdownName: "Festival",
+        link: "festival",
+      },
+      {
+        dropdownName: "Music",
+        link: "music",
+      },
+    ],
   },
   {
-    name: "document",
-    link: "document",
+    name: "jobs",
+    link: "jobs",
     dropdown: false,
     dropdownItems: [],
   },
