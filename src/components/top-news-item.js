@@ -29,7 +29,7 @@ const TopNews = ({
         >
           <h4 className="text-xl font-semibold">{heading}</h4>
         </a>
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between text-sm font-semibold py-4 ">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between text-xs font-semibold py-4 ">
           <a
             href={author}
             className="hover:text-blue-700 transition duration-100 ease-linear 
