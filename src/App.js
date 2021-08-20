@@ -16,6 +16,7 @@ import DontMiss from "./components/dontMiss";
 import Latest from "./components/latest";
 import Categories from "./components/categories";
 import Footer from "./components/footer";
+import News from "./components/news";
 function App() {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -58,6 +59,7 @@ function App() {
             <div className="col-span-0 lg:col-span-2  lg:border-double lg:border-r-4 lg:border-gray-300">
             <Switch>
           <Route path={"/"} exact component={Home} />
+          <Route path={"/news"} exact component={News} />
         </Switch>
             </div>
             <div className="">
