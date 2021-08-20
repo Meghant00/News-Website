@@ -1,7 +1,7 @@
 const navItems = [
   {
     name: "Home",
-    link: "",
+    link: "/",
     dropdown: false,
     dropdownItems: [],
   },
