@@ -27,6 +27,7 @@ const TrendingItems = () => {
           image={items.image}
           author={items.author}
           authorImage={items.authorImage}
+          description={items.description}
         />
       ))}
     </div>
