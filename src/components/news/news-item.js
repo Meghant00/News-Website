@@ -7,7 +7,7 @@ const NewsItem = ({ image, title, author, authorImage, tags, date }) => {
   const month = displayDate.toLocaleString("default", { month: "short" });
   const year = displayDate.getFullYear();
   return (
-    <div className="flex flex-row justify-between py-4">
+    <div className="flex flex-row justify-between py-10">
       <div className=" w-2/6">
         <img src={image} alt={title} className="w-full" />
       </div>
