@@ -16,7 +16,7 @@ import DontMiss from "./components/dontMiss";
 import Latest from "./components/latest";
 import Categories from "./components/categories";
 import Footer from "./components/footer";
-import News from "./components/news";
+import News from "./components/news/news";
 function App() {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {

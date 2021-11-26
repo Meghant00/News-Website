@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegClock, FaRegFolder } from "react-icons/fa";
-import Tags from "./tags";
+import Tags from "../tags";
 
 const TopNews = ({
   heading,

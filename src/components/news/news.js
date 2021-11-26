@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeading from "./page-heading";
+import PageHeading from "../page-heading";
 import TopNewsItems from "./top-news-items";
 
 const News = () => {

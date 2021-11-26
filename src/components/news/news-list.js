@@ -1,5 +1,5 @@
 import React from "react";
-import news from "../data/news";
+import news from "../../data/news";
 import NewsItem from "./news-item";
 
 const NewsList = () => {

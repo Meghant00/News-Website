@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import news from "../data/news";
+import news from "../../data/news";
 import TopNews from "./top-news-item";
 
 const TopNewsItems = () => {
