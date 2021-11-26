@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import news from "../../data/news";
-import { newsPerPage, postsPerPage } from "../../utilis/global-variables";
-import NewsItem from "../news-item";
+import { newsPerPage } from "../../utilis/global-variables";
+import NewsItem from "./news-item";
 import Paginate from "../paginate";
 
 const NewsPagination = () => {

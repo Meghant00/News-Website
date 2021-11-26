@@ -1,5 +1,5 @@
 import React from "react";
-import Tags from "./tags";
+import Tags from "../tags";
 
 const NewsItem = ({ image, title, author, authorImage, tags, date }) => {
   const displayDate = new Date(date.split("-"));
