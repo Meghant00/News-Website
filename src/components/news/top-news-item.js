@@ -17,12 +17,12 @@ const TopNews = ({
   const year = displayDate.getFullYear();
   return (
     <div className="flex flex-row items-center justify-between gap-4 px-2 py-4">
-      <div className="w-1/2">
+      <div className="w-2/5">
         <a href={heading}>
           <img src={image} alt={heading} />
         </a>
       </div>
-      <div className="flex flex-col items-start justify-between w-1/2 text-gray-400">
+      <div className="flex flex-col items-start justify-between w-3/5 text-gray-400">
         <a
           href={heading}
           className="text-black hover:text-title transition duration-150 ease-in"
