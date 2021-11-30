@@ -16,7 +16,7 @@ const TopSlider = () => {
     windowWidth = window.screen.width;
     if (windowWidth < 600) {
       setslidePerView(1);
-    } else if (windowWidth > 600 && windowWidth < 800) {
+    } else if (windowWidth > 600 && windowWidth < 900) {
       setslidePerView(2);
     }
   }, []);
