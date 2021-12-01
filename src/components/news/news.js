@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeading from "../page-heading";
+import SubTitle from "../sub-title";
 import NewsPagination from "./news-pagination";
 import TopNewsItems from "./top-news-items";
 
@@ -10,6 +11,7 @@ const News = () => {
         <PageHeading heading="News" />
       </div>
       <TopNewsItems />
+      <SubTitle title="Recent News" />
       <NewsPagination />
     </div>
   );
