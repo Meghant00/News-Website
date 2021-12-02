@@ -15,9 +15,7 @@ const navItems = [
     name: "Economy",
     link: "economy",
     dropdown: false,
-    dropdownItems: [
-      
-    ],
+    dropdownItems: [],
   },
   {
     name: "Entertainment",
@@ -33,12 +31,6 @@ const navItems = [
         link: "music",
       },
     ],
-  },
-  {
-    name: "jobs",
-    link: "jobs",
-    dropdown: false,
-    dropdownItems: [],
   },
 ];
 
