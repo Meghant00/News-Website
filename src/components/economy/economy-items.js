@@ -25,7 +25,7 @@ const EconomyItems = () => {
   };
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
         {currentNews.map((items) => (
           <EconomyItem
             key={items.title}
