@@ -43,9 +43,13 @@ const EconomyItem = ({
               <span className="text-sm">{author}</span>
             </a>
           </div>
-          {month}, {day} {year}
+          {month} {day}, {year}
         </div>
-        <div className="py-2">{description}</div>
+        <div className="py-2">
+          {description.length > 116
+            ? `${description.substring(0, 120)}...`
+            : description}
+        </div>
       </div>
     </div>
   );
