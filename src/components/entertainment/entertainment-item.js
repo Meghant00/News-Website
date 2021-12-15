@@ -26,7 +26,7 @@ const EntertainmentItem = ({
           {title}
         </h2>
       </a>
-      <div className="flex flex-col items-center justify-between py-8 md:flex-row ">
+      <div className="flex flex-col items-center justify-between py-8 lg:flex-row ">
         <div className="flex flex-col items-center justify-start w-full">
           <img
             src={authorImage}
@@ -38,7 +38,7 @@ const EntertainmentItem = ({
             {day} {month}, {year}
           </div>
         </div>
-        <p className="py-4 px-8 md:border-l border-gray-400">{description}</p>
+        <p className="py-4 px-8 lg:border-l border-gray-400">{description}</p>
       </div>
     </div>
   );
