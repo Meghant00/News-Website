@@ -18,6 +18,7 @@ import Categories from "./components/categories";
 import Footer from "./components/footer";
 import News from "./components/news/news";
 import Economy from "./components/economy/economy";
+import Entertainment from "./components/entertainment/entertainment";
 function App() {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   const sidebarClickHandler = () => {
@@ -62,6 +63,11 @@ function App() {
                     <Route path={"/"} exact component={Home} />
                     <Route path={"/news"} exact component={News} />
                     <Route path={"/economy"} exact component={Economy} />
+                    <Route
+                      path={"/entertainment"}
+                      exact
+                      component={Entertainment}
+                    />
                   </Switch>
                 </div>
                 <div className="">

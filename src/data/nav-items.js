@@ -24,11 +24,11 @@ const navItems = [
     dropdownItems: [
       {
         dropdownName: "Festival",
-        link: "festival",
+        link: "entertainment",
       },
       {
         dropdownName: "Music",
-        link: "music",
+        link: "entertainment",
       },
     ],
   },
